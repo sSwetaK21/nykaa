@@ -14,36 +14,117 @@
     <!-- Icons -->
     <link rel="icon" type="image/x-icon" href="images/favicon.webp">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- slick theme css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
 </head>
 
 <body>
     <main>
+        <!-- banner here -->
         <section class="container">
 
-
+            <!-- breadcrumbs -->
             <ul class="breadcrumb">
                 <li class="breadcrumb_li"><a class="pagename" href="#">Home</a><span class="arrow">❯</span></li>
                 <li class="breadcrumb_li"><a class="pagename" href="#">Makeup</a><span class="arrow">❯</span></li>
                 <li class="last_list breadcrumb_li"><a class="pagename" href="#">Face</a></li>
             </ul>
 
-        <div class="title">
-            <h1 class="heading"> Face Makeup Collection
-                <span class="head_span">(3245)</span>
-            </h1>
-        </div>
 
+            <div class="title">
+                <h1 class="heading"> Face Makeup Collection
+                    <span class="head_span">(3245)</span>
+                </h1>
+            </div>
 
+            <!-- slider -->
+            <div class="slider">
+                <div class="item">
+                    <img src="https://images-static.nykaa.com/uploads/6c69139e-b8c7-41b1-86ae-497dda6c0bf7.jpg?tr=w-1200,cm-pad_resize" alt="Image" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="https://images-static.nykaa.com/uploads/29f44039-3002-4087-88b1-1c6bda128db7.png?tr=w-1200,cm-pad_resize" alt="Image" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="https://images-static.nykaa.com/uploads/1e8e57a6-3a48-490e-8560-0ddb86653bfc.jpg?tr=w-1200,cm-pad_resize" alt="Image" class="img-fluid">
+                </div>
 
+            </div>
 
-            <div class="img_banner">
-                <img src="images/banner.webp" alt="Image" class="img-fluid">
+            <div class="nykainfo">
+                <div class="textInfo">
+                    <p class="para">Euphoria Is Serving Up ‘Emotional Glam’ With These 12 Groundbreaking Beauty Moments
+                    </p>
+                    <div class="subText">
+                        <p class="para2">We’ve compiled iconic beauty moments the cast rocked throughout season 1, along
+                            with a few standouts from season 2, to bookmark as inspiration.</p>
+                        <a href="#" class="a_link">Read More On Nykaa's Beauty Book></a>
+                    </div>
+                </div>
+                <div class="textImg">
+                    <img src="images/img.jpg" class="infoImg" alt="Girl">
+                </div>
             </div>
 
 
+        </section>
+        <!-- product list here -->
+        <section class="container products">
+            <div class="product_title">
+                <h1 class="product_head">All Products</h1>
+            </div>
+            <div class="wrapper">
+                <div class="filters">
+                    <div class="sort">
+                        <button class="sortBtn">
+                            <span class="sortName">Sort By : Popularity</span>
+                            <i class='bx bx-chevron-down downArr'></i>
+                        </button>
+                        <ul class="sortDiv">
+                            <div class="sortEl">
+                                <label for="popularity" class="labelClass">Popularity</label>
+                                <input type="radio" id="popularity" checked>
+                            </div>
+                            <div class="sortEl">
+                                <label for="discount" class="labelClass">Discount</label>
+                                <input type="radio" id="discount" >
+                            </div>
+                            <div class="sortEl">
+                                <label for="name" class="labelClass">Name</label>
+                                <input type="radio" id="name" >
+                            </div>
+                            <div class="sortEl">
+                                <label for="newArrival" class="labelClass">New Arrival</label>
+                                <input type="radio" id="newArrival" >
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="filters_div">
+                        <div class="category"></div>
+                    </div>
+
+                </div>
+                <div class="products">
+
+                </div>
+            </div>
 
         </section>
     </main>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slickSLider -->
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="productpg.js"></script>
+
+
 </body>
 
 </html>
