@@ -28,6 +28,9 @@ body {
     border-bottom: solid 1px #ebebeb;
 }
 
+.box {
+    padding: 15px 10px;
+}
 /* color:#fc2779; */
 
 /* page starts */
@@ -391,18 +394,30 @@ span.priceValue {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+
 }
 
 .wishlist button {
     border: none;
 }
+button.fillBtn {
+    font-size: 25px;
+    background-color: white;
+    padding: 3px 0px;
+    color: #fc2779;
+    width: 20%;
 
+}
 .heartBtn {
     font-size: 25px;
     color: #fc2779;
     width: 20%;
     background-color: white;
     padding: 3px 0px;
+    cursor: pointer;
 
 
 }
@@ -529,3 +544,7 @@ p.catTitle {
 .catnamebox {
     font-size: 15px;
 }
+span.CatArrow {
+    cursor: pointer;
+}
+

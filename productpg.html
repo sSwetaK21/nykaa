@@ -87,22 +87,22 @@
                             <span class="sortName">Sort By : Popularity</span>
                             <i class='bx bx-chevron-down downArr'></i>
                         </button>
-                        <ul class="sortDiv">
+                        <ul class="sortDiv" style="display: none;">
                             <div class="sortEl">
                                 <label for="popularity" class="labelClass">Popularity</label>
-                                <input type="radio" id="popularity" checked>
+                                <input type="radio" id="popularity" name="product-radio" value="popu" >
                             </div>
                             <div class="sortEl">
                                 <label for="discount" class="labelClass">Discount</label>
-                                <input type="radio" id="discount">
+                                <input type="radio" id="discount" name="product-radio" value="disc">
                             </div>
                             <div class="sortEl">
                                 <label for="name" class="labelClass">Name</label>
-                                <input type="radio" id="name">
+                                <input type="radio" id="name" name="product-radio" value="nameV">
                             </div>
                             <div class="sortEl">
                                 <label for="newArrival" class="labelClass">New Arrival</label>
-                                <input type="radio" id="newArrival">
+                                <input type="radio" id="newArrival" name="product-radio" value="newArr">
                             </div>
                         </ul>
                     </div>
@@ -116,7 +116,7 @@
                                 <span class="Cat-UpArrow CATCUT CatArrow">✖</span>
                             </div>
 
-                            <div class="catOptions">
+                            <div class="catOptions " style="display: none;">
 
                                 <div class="control_value d-flex">
                                     <div class="catnamebox">
@@ -177,7 +177,7 @@
                                     </div>
 
                                     <div class="labels">
-                                        <input id="checkbox_Miss" type="checkbox">
+                                        <input id="checkbox_Miss" type="checkbox" value="missClaire">
                                         <label class="control control_checkbox" for="checkbox_Miss">
                                     </div>
 
@@ -195,10 +195,10 @@
                         <div class="Price-box b_b">
                             <div class="FPRICE d-flex">
                                 <p class="catTitle">Price</p>
-                                <span class="Cat-DownArrow PriDOWN CatArrow" style="display: none;">˅</span>
-                                <span class="Cat-UpArrow PriCUT CatArrow" style="display: block;">x</span>
+                                <span class="Cat-DownArrow PriDOWN CatArrow">˅</span>
+                                <span class="Cat-UpArrow PriCUT CatArrow" style="display: none;">x</span>
                             </div>
-                            <div class="PRICEMULTI">
+                            <div class="PRICEMULTI" style="display: none;">
                                 <div class="priceDiv">
                                     <p>Rs. 0 - Rs. 499</p>
                                     <div class="labels">
@@ -229,566 +229,631 @@
                                     </div>
                                 </div>
 
-                                    
-                                    
-                                </div>
+
+
                             </div>
                         </div>
+
+                        <div class="discount  box d-flex b_b">
+                            <p class="catTitle">Discount</p>
+                            <span class="Cat-DownArrow disDOWN CatArrow">˅</span>
+                            <!-- <span class="Cat-UpArrow disCUT CatArrow" style="display: none;" >x</span> -->
+                        </div>
+                        
+
+                        <div class="brand box d-flex b_b">
+                            <p class="catTitle">Brand</p>
+                            <span class="Cat-DownArrow brandDOWN CatArrow">˅</span>
+                            <!-- <span class="Cat-UpArrow disCUT CatArrow" style="display: none;" >x</span> -->
+                        </div>
+
+
 
                     </div>
 
-
-                    <!-- Right side -->
-                    <div class="products">
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <div class="product_tag">
-                                    <span class="feature" aria-hidden="true">Featured</span>
-                                    <span class="bestSell" aria-hidden="true">BestSellers</span>
-                                </div>
-
-
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/6/66e37f66902395646860_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Maybelline New York Fit Me Matte+Poreless Liquid
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class=" oldPrice">₹599</span>
-                                            <span class="priceValue">₹499</span>
-                                            <span class="offer">20% Off</span>
-
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/4/84f31cf8904330902626_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Kay Beauty Hydrating Foundation
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/538a72e8904207501020_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Insight Cosmetics Pro Concealer Palette -
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <span class="feature" aria-hidden="true">Featured</span>
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class="priceValue">₹599</span>
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <div class="product_tag">
-                                    <!-- <span class="feature" aria-hidden="true">Featured</span> -->
-                                    <span class="bestSell" aria-hidden="true">BestSellers</span>
-                                </div>
-
-
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class=" priceValue oldPrice">₹599</span>
-                                            <span class="priceValue">₹499</span>
-                                            <span class="offer">20% Off</span>
-
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="productEl">
-                            <div class="productBox">
-                                <div class="product_tag">
-                                    <span class="feature" aria-hidden="true">Featured</span>
-                                    <span class="bestSell" aria-hidden="true">BestSellers</span>
-                                </div>
-
-
-                                <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
-                                    target="_blank" class="productLink">
-
-                                    <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
-                                        alt="Nykaa" class="productImg">
-
-                                    <div class="productInfo">
-                                        <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
-                                            Pump
-
-                                        </div>
-                                        <div class="price">
-                                            <span class="mrp">MRP:</span>
-                                            <span class=" oldPrice">₹599</span>
-                                            <span class="priceValue">₹499</span>
-                                            <span class="offer">20% Off</span>
-
-                                        </div>
-                                        <p class="productOffer">Enjoy Free Gift</p>
-                                        <div class="productRate">
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="star-wrap">
-                                                <i class='bx bx-star'></i>
-                                            </span>
-                                            <span class="value">(1679)
-                                            </span>
-                                        </div>
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-                            <div class="wishlist">
-                                <button class="heartBtn" type="button">
-                                    <i class='bx bx-heart'></i>
-                                </button>
-
-                                <button type="button" class="previewBtn">
-                                    Preview Shades
-                                </button>
-                            </div>
-                        </div>
-
-
-
-                        <div class="paginationbox">
-
-                            <p class="paginationText">Page 1</p>
-                            <div class="pagination">
-                                <a href="#" class="pageLink  arrows">
-                                    < </a>
-                                        <a href="#" class="pageLink">1</a>
-                                        <a href="#" class="pageLink active">2</a>
-                                        <a href="#" class="pageLink">3</a>
-                                        <a href="#" class="pageLink">4</a>
-                                        <a href="#" class="pageLink">5</a>
-                                        <a href="#" class="pageLink">6</a>
-                                        <a href="#" class="pageLink arrows"> > </a>
-                            </div>
-                        </div>
-
-                    </div>
+                  
                 </div>
+
+
+                <!-- Right side -->
+                <div class="products">
+
+                    <div class="productEl">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                16 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+
+                                </button>
+                                <button class="fillBtn" style=" display: none;">
+                                    <i class='bx bxs-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="productEl disc">
+                        <div class="productBox">
+                            <div class="product_tag">
+                                <span class="feature" aria-hidden="true">Featured</span>
+                                <span class="bestSell" aria-hidden="true">BestSellers</span>
+                            </div>
+
+
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/6/6/66e37f66902395646860_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Maybelline New York Fit Me Matte+Poreless Liquid
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class=" oldPrice">₹599</span>
+                                        <span class="priceValue">₹499</span>
+                                        <span class="offer">20% Off</span>
+
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                13 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="productEl">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/8/4/84f31cf8904330902626_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Kay Beauty Hydrating Foundation
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="productEl  popu">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/538a72e8904207501020_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Insight Cosmetics Pro Concealer Palette -
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productEl missClaire ">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productEl newArr">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productEl popu">
+                        <div class="productBox">
+                            <span class="feature" aria-hidden="true">Featured</span>
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class="priceValue">₹599</span>
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productEl newArr">
+                        <div class="productBox">
+                            <div class="product_tag">
+                                <!-- <span class="feature" aria-hidden="true">Featured</span> -->
+                                <span class="bestSell" aria-hidden="true">BestSellers</span>
+                            </div>
+
+
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class=" priceValue oldPrice">₹599</span>
+                                        <span class="priceValue">₹499</span>
+                                        <span class="offer">20% Off</span>
+
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+
+
+
+
+                        <div class="wishlist">
+                            <div class="shades">
+                                15 Shades
+                            </div>
+                            <div class="hoverbtn" style="display: none;">
+                                <button class="heartBtn" type="button">
+                                    <i class='bx bx-heart'></i>
+                                </button>
+
+                                <button type="button" class="previewBtn">
+                                    Preview Shades
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="productEl nameV">
+                        <div class="productBox">
+                            <div class="product_tag">
+                                <span class="feature" aria-hidden="true">Featured</span>
+                                <span class="bestSell" aria-hidden="true">BestSellers</span>
+                            </div>
+
+
+                            <a href="https://www.nykaa.com/makeup/face/c/13?ptype=lst&id=13&root=nav_2&dir=desc&order=popularity"
+                                target="_blank" class="productLink">
+
+                                <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-200,h-200,cm-pad_resize/5/3/539a903NYKAC00000160_1.jpg"
+                                    alt="Nykaa" class="productImg">
+
+                                <div class="productInfo">
+                                    <div class="productName">Nykaa All Day Matte Long Wear Liquid Foundation With
+                                        Pump
+
+                                    </div>
+                                    <div class="price">
+                                        <span class="mrp">MRP:</span>
+                                        <span class=" oldPrice">₹599</span>
+                                        <span class="priceValue">₹499</span>
+                                        <span class="offer">20% Off</span>
+
+                                    </div>
+                                    <p class="productOffer">Enjoy Free Gift</p>
+                                    <div class="productRate">
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="star-wrap">
+                                            <i class='bx bx-star'></i>
+                                        </span>
+                                        <span class="value">(1679)
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="wishlist">
+                            <button class="heartBtn" type="button">
+                                <i class='bx bx-heart'></i>
+                            </button>
+
+                            <button type="button" class="previewBtn">
+                                Preview Shades
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="paginationbox">
+
+                        <p class="paginationText">Page 1</p>
+                        <div class="pagination">
+                            <a href="#" class="pageLink  arrows">
+                                < </a>
+                                    <a href="#" class="pageLink">1</a>
+                                    <a href="#" class="pageLink active">2</a>
+                                    <a href="#" class="pageLink">3</a>
+                                    <a href="#" class="pageLink">4</a>
+                                    <a href="#" class="pageLink">5</a>
+                                    <a href="#" class="pageLink">6</a>
+                                    <a href="#" class="pageLink arrows"> > </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
         </section>
